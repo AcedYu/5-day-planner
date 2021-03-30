@@ -4,15 +4,16 @@ This is assignment 5 for the program. In this assignment I implement the third p
 
 It contains notable features such as:
 - Current day displayed
-- Timeblocks for standard business hours, color coded to indicate whether the blocks are in the past, present, or future
+- Timeblocks for standard business hours (9 AM to 5PM), color coded to indicate whether the blocks are in the past, present, or future
 - Modifiable blocks to add events
-- Persisting data saved in Local Storage
+- Persisting scheduling data entries saved in Local Storage
 
 ## Built With
 
 * [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 * [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+* [Bootstrap] (https://getbootstrap.com/)
 * [jQuery](https://api.jquery.com/)
 * [moment.js](https://momentjs.com/)
 

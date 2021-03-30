@@ -13,6 +13,7 @@ textarea{
   padding: 10px;
 }
 
+/* Jumbotron CSS */
 .jumbotron {
   text-align: center;
   background-color: transparent;
@@ -25,38 +26,45 @@ textarea{
   white-space: pre-wrap;
 }
 
+/* CSS for each time block row (each row will contain classes row and time block) */
 .time-block{
   text-align: center;
   border-radius: 15px;
 }
 
+/* row CSS */
 .row {
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;;
 }
 
+/* CSS for the div containing our hour value on our schedule */
 .hour {
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
 }
 
+/* Assigned class "past" to indicate that the block has already happened */
 .past {
   background-color: #d3d3d3;
   color: white;
 }
 
+/* Assigned class "present" to indicate that the block is currently happening */
 .present {
   background-color: #ff6961;
   color: white;
 }
 
+/* Assigned class "future" to indicate that the block has not occured yet */
 .future {
   background-color: #77dd77;
   color: white;
 }
 
+/* CSS for the save button */
 .saveBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
@@ -65,6 +73,7 @@ textarea{
   color: white;
 }
 
+/* Hover effect for the save button */
 .saveBtn i:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
