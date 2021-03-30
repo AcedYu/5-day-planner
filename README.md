@@ -13,7 +13,7 @@ It contains notable features such as:
 * [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 * [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-* [Bootstrap] (https://getbootstrap.com/)
+* [Bootstrap](https://getbootstrap.com/)
 * [jQuery](https://api.jquery.com/)
 * [moment.js](https://momentjs.com/)
 
