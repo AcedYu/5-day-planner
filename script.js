@@ -44,4 +44,35 @@ for (var i = 0; i < timeEntries.length; i++) {
   timeEntries[i].classList.add(timeCheck[i]);
 }
 
-console.log(timeEntries);
+// Entry data will be stored in an object with each key being each hour of time that our table is recording. Example: {9: "recorded event"};
+var scheduleData = JSON.parse(localStorage.getItem("schedule"));
+if (!scheduleData) {
+  scheduleData = {};
+}
+
+// Function to display schedule
+var renderSchedule = () => {
+  timeEntries.each(function(index, node) {
+    if (scheduleData[index + 9]) {
+      node.setAttribute('value', scheduleData[index + 9]);
+    }
+  });
+}
+// initialize render schedule immediately
+renderSchedule();
+
+save.on('click', function(event) {
+  // turn the event target into something we can use with jQuery
+  var target = $(event.target);
+  // grab the name and value of the form next to the button
+  var key = target.siblings().eq(1).attr('name');
+  var val = target.siblings().eq(1).val();
+  saveEntry(key, val);
+  // No need to render schedule here because the data in the form is still there
+});
+
+// Saves entry to the object and then to local storage
+var saveEntry = (key, value) => {
+  scheduleData[key] = value;
+  localStorage.setItem("schedule", JSON.stringify(scheduleData));
+}
