@@ -8,6 +8,10 @@ It contains notable features such as:
 - Modifiable blocks to add events
 - Persisting scheduling data entries saved in Local Storage
 
+![Image](demo.png)
+
+Due: Friday, April 2, 2021 11:59 PM
+
 ## Built With
 
 * [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
